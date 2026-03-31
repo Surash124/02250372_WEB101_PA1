@@ -1,2 +1,2 @@
-# Surash124-02250372_WEB101_PA1
+# 02250372_WEB101_PA1
 assignmen web101
