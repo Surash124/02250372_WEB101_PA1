@@ -1,5 +1,3 @@
-// TweetCard.jsx — reusable component for rendering a single tweet.
-// Props: tweet (object), onLike, onRetweet, onBookmark (functions)
 import { formatCount } from '../data/mockData';
 import styles from './TweetCard.module.css';
 

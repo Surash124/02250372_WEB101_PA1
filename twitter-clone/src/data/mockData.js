@@ -74,7 +74,7 @@ export const whoToFollow = [
   { id: 'wf3', name: 'Help Desk', handle: 'help_desk', avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=helpdesk', verified: false },
 ];
 
-// Utility: format large numbers → "48.2K", "2.1M"
+// Utility: format large numbers into  "48.2K", "2.1M"
 export const formatCount = (n) => {
   if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + 'M';
   if (n >= 1_000)     return (n / 1_000).toFixed(1)     + 'K';

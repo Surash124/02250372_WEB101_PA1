@@ -10,17 +10,6 @@ A React-based recreation of the Twitter/X feed page built with Vite + React.
 - Follow/unfollow suggested users
 - Fully responsive: desktop, tablet (icon sidebar), mobile (bottom nav)
 
-## Component Architecture
-App → Sidebar, Feed, RightPanel, MobileNav  
-Feed → TweetComposer, TweetCard (×n)  
-Data source: src/data/mockData.js
-
-## Tech Stack
-- React 18 with Hooks (useState)
-- Vite (build tool)
-- CSS Modules (scoped styles per component)
-- No external UI libraries
-
 ## How to Run
 npm install
 npm run dev

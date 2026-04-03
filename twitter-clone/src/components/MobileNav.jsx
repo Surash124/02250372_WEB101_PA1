@@ -1,4 +1,4 @@
-// MobileNav.jsx — bottom nav bar shown only on small screens.
+// MobileNav.jsx — bottom nav bar shown only on small screen
 import styles from './MobileNav.module.css';
 
 const tabs = ['Home', 'Explore', 'Notifications', 'Messages'];

@@ -1,6 +1,4 @@
-// Feed.jsx — main center column.
-// Renders the tab bar, composer, and the list of TweetCards.
-// State for tweets lives here (lifted from TweetCard, owned here for the list).
+
 import { useState } from 'react';
 import { tweets as initialTweets } from '../data/mockData';
 import TweetCard from './TweetCard';
