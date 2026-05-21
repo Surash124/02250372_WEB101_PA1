@@ -1,0 +1,76 @@
+/* App.css - Root two-panel layout with mobile responsive behaviour */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  overflow: hidden;
+}
+
+/* Left: sidebar */
+.app__sidebar {
+  width: 350px;
+  min-width: 350px;
+  border-right: 1px solid #dbdbdb;
+  height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Right: chat window or empty state */
+.app__chat {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile: show only one panel at a time */
+@media (max-width: 768px) {
+  .app {
+    border: none;
+  }
+
+  .app__sidebar {
+    width: 100%;
+    min-width: unset;
+    border-right: none;
+  }
+
+  .app__sidebar--hidden-mobile {
+    display: none;
+  }
+
+  .app__chat {
+    width: 100%;
+  }
+
+  .app__chat--hidden-mobile {
+    display: none;
+  }
+}
+
+/* Tablet: narrower sidebar */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app__sidebar {
+    width: 280px;
+    min-width: 280px;
+  }
+}
